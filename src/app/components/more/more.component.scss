@@ -1,0 +1,35 @@
+@import "../../../theme/theme";
+
+:host {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.more {
+  font-size: 25px;
+  margin: 30px;
+}
+
+
+
+
+@media screen and (max-width: $mobile-size) {
+  :host {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: $mobile-size) and (max-width: $max-screen-size) {
+  .more {
+    margin-left: 930px;
+  }
+}
+
+@media screen and (min-width: $max-screen-size) {
+  .more {
+    margin-left: 930px;
+  }
+}

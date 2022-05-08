@@ -1,0 +1,18 @@
+:host{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  max-width: 60%;
+}
+
+:host > * {
+  margin-left: 12px;
+}
+:host > *:first-child {
+  margin-left: 0px;
+}
+
+.selected {
+  text-decoration: solid underline  #fa644b 2px;
+}

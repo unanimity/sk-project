@@ -1,0 +1,8 @@
+<img [src]="project!.imgUrl">
+<p>{{project!.name}}</p>
+<p class="description">{{project!.description}}</p>
+<div class="actions">
+  <span *ngFor="let tag of project!.tags">{{ProjectTag[tag]}}</span>
+  <a *ngIf="project.link" [href]="project.link" target="_blank">Open</a>
+</div>
+

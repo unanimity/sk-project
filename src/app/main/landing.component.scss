@@ -1,0 +1,54 @@
+@import "../../theme/theme";
+
+.sections-wrapper {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.sections-wrapper > * {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAABAgMAAACqF8bMAAAACVBMVEUAAAD///99fZvSozUFAAAAAnRSTlMAAHaTzTgAAAANSURBVAgdY2hgYGAFAAIKAIZ181I5AAAAAElFTkSuQmCC) 0 100% repeat-x;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+ // max-width: $max-screen-size;
+}
+
+
+@media screen and  (max-width: $mobile-size) {
+  .sections-wrapper > * {
+    padding-left: 0;
+  }
+  #left-side-menu{
+    display: none;
+  }
+  #top-side-menu{
+    display: block;
+  }
+}
+@media  screen and (min-width: $mobile-size) and (max-width: $max-screen-size){
+  .sections-wrapper > * {
+    padding-left: 45px;
+  }
+  #left-side-menu{
+    display: block;
+  }
+  #top-side-menu{
+    display: none;
+  }
+}
+@media  screen and (min-width: $max-screen-size) {
+  .sections-wrapper > * {
+    padding-left: 80px;
+  }
+  #left-side-menu{
+    display: block;
+  }
+  #top-side-menu{
+    display: none;
+  }
+}
+

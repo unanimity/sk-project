@@ -1,0 +1,14 @@
+$max-screen-size: 1024px;
+$mobile-size: 425px;
+
+/*
+@media screen, print and  (max-width: $mobile-size) {
+  !* MOBILE *!
+}
+@media  screen, print and (min-width: $mobile-size) and (max-width: $max-screen-size){
+  !* TABLET *!
+}
+@media  screen, print and (min-width: $max-screen-size) {
+  !* DESKTOP *!
+}
+*/

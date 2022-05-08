@@ -1,0 +1,15 @@
+<h1>Projects</h1>
+<app-project-filter
+  [tags]="tags"
+  (tag)="onFilter($event)"
+></app-project-filter>
+<div class="content">
+  <ng-container *ngFor="let project of projects; let i=index">
+    <app-project-card
+      *ngIf="isMore||i<6"
+      [project]="project"
+    >
+    </app-project-card>
+  </ng-container>
+</div>
+<app-more *ngIf="!isMore" (click)="isMore=!isMore"></app-more>
