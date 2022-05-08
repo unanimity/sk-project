@@ -1,0 +1,31 @@
+image: node:latest
+
+stages:
+  - build
+  - deploy
+
+before_script:
+  - npm install
+
+Build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    name: '$CI_JOB_NAME'
+    paths:
+      - build
+  only:
+    - main
+
+Deploy to AWS:
+  image: python:latest
+  stage: deploy
+  before_script:
+    - pip install awscli
+  script:
+    - aws s3 sync ./build s3://sk-project-link/ --delete
+    - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_PROD --paths "/*"
+  only:
+    - main
+  when: manual
