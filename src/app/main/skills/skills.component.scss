@@ -1,0 +1,115 @@
+@import "../../../theme/theme";
+
+.content {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+
+}
+
+.content > * {
+  min-width: 320px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cursor {
+  width: 8px;
+  height: 16px;
+  margin-right: 3px;
+}
+
+p{position: relative}
+
+.current-position {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #fa644b;
+}
+
+
+.star-five {
+  position: absolute;
+  top:3px;
+  right: -13px;
+  display: block;
+  color: #fa644b;
+  width: 0px;
+  height: 0px;
+  border-right: 5px solid transparent;
+  border-bottom: 3px solid #fa644b;
+  border-left: 5px solid transparent;
+  transform: rotate(35deg);
+}
+.star-five:before {
+  border-bottom: 4px solid #fa644b;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -2px;
+  left: -3px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+.star-five:after {
+  position: absolute;
+  display: block;
+  color: #fa644b;
+  top: 0px;
+  left: -5px;
+  width: 0px;
+  height: 0px;
+  border-right: 5px solid transparent;
+  border-bottom: 3px solid #fa644b;
+  border-left: 5px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+
+
+@media screen and  (max-width: $mobile-size) {
+  .content {
+    justify-content: center;
+  }
+  section {
+    padding-left: 24px;
+  }
+}
+@media  screen and (min-width: $mobile-size) and (max-width: $max-screen-size){
+  .content {
+    justify-content: start;
+  }
+}
+@media  screen and (min-width: $max-screen-size) {
+  .content {
+    justify-content: start;
+  }
+}

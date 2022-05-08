@@ -1,0 +1,14 @@
+:host {
+  z-index: 1;
+}
+h1, p {
+  font-size: 81px;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  h1, p {
+    font-size: 40px;
+    margin: 0;
+  }
+}

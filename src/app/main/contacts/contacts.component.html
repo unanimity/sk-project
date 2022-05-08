@@ -1,0 +1,24 @@
+<h1>Contacts</h1>
+<p>Message me. Usually I reply on the same day.</p>
+<div class="content">
+  <div class="contacts">
+    <div>
+      <h3>Social networks</h3>
+      <ng-container *ngFor="let contact of socialLinks">
+        <a target="_blank" [href]="contact.link">{{contact.title}}<span> > </span></a>
+      </ng-container>
+    </div>
+ <div>
+   <h3>Profiles & Pages</h3>
+   <ng-container *ngFor="let contact of socialPages">
+     <a target="_blank" [href]="contact.link">{{contact.title}}<span> > </span></a>
+   </ng-container>
+ </div>
+    <div></div>
+  </div>
+  <div class="qr-img">
+    <h3>Scan me</h3>
+    <img src="assets/images/qr-code.svg">
+  </div>
+</div>
+

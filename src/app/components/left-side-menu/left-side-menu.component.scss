@@ -1,0 +1,19 @@
+@import "../../../theme/theme";
+:host {
+  min-width: 112px;
+  max-width: 130px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAEAgMAAAAytr2pAAAACVBMVEUAAAD///99fZvSozUFAAAAAnRSTlMAAHaTzTgAAAAQSURBVAgdY2hgYGBwYHAAAASIAQEOG2oSAAAAAElFTkSuQmCC) 100% 0 repeat-y;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 12px 12px 12px 32px;
+}
+
+
+a{
+  line-height: 2;
+}

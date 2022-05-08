@@ -1,0 +1,75 @@
+@import "../../../theme/theme";
+
+p{
+  margin-right: 12px;
+}
+a {
+  padding-left: 8px;
+}
+
+a > span {
+  opacity: 0;
+
+}
+
+a:hover > span {
+  opacity: 1;
+}
+
+.content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: revert;
+}
+
+.content > * {
+  width: 100%;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.contacts > * {
+  min-width: 180px;
+  margin-left: 12px;
+}
+
+.contacts > *:first-child {
+  margin-left: 0;
+}
+
+
+@media screen and (max-width: $mobile-size) {
+  .qr-img {
+    display: none;
+  }
+  .contacts {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: $mobile-size) and (max-width: $max-screen-size) {
+  .qr-img {
+    display: block;
+  }
+  .contacts {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: $max-screen-size) {
+  .qr-img {
+    display: block;
+  }
+  .contacts {
+    justify-content: start;
+  }
+}

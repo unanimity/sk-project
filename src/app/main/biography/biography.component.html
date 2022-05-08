@@ -1,0 +1,6 @@
+<h1>History of my life</h1>
+<p>
+  <img src="assets/images/avatar.png" alt="Photo Sergei Kharlamov" class="leftimg">
+  <span [innerHTML]="bio"></span>
+</p>
+<app-more *ngIf="!isMore" (click)="isMore=!isMore"></app-more>
