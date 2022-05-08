@@ -74,7 +74,7 @@ export default [
     tags: [ProjectTag.Social],
     link: "https://hack-kursk.ru/",
     description: "Organizing and conducting a 3 competition for 100 programmers in 2017,2018 and 2019.",
-    imgUrl: "assets/images/projects/work_8.jpg",
+    imgUrl: "assets/images/projects/work_8.webp",
     name: "Hack-Kursk \"IT Vocation\"",
   },
   {
@@ -88,7 +88,7 @@ export default [
     tags: [ProjectTag.Website],
     link: "#",
     description: "My first website experience on php, bootstrap, jQuery and ajax.",
-    imgUrl: "assets/images/projects/dobriedela.png",
+    imgUrl: "assets/images/projects/dobriedela.webp",
     name: "Dobrie dela",
   },
   {

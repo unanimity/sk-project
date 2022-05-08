@@ -24,7 +24,7 @@ Deploy to AWS:
   before_script:
     - pip install awscli
   script:
-    - aws s3 sync ./build s3://sk-project-link/ --acl=public-read --delete
+    - aws s3 sync ./build s3://sk-project-link/ --delete
     - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST --paths "/*"
   only:
     - main
