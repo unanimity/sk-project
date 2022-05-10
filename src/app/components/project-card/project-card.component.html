@@ -1,4 +1,11 @@
-<img [src]="project!.imgUrl">
+<picture>
+  <source media="(min-width:650px)" [srcset]="project!.imgUrl+'-600.webp'">
+  <source media="(min-width:465px)" [srcset]="project!.imgUrl+'-300.webp'">
+  <img [src]="project!.imgUrl+'-600.webp'"
+       alt="Project Picture"
+       width="300"
+       height="125">
+</picture>
 <p>{{project!.name}}</p>
 <p class="description">{{project!.description}}</p>
 <div class="actions">

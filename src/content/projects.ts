@@ -3,7 +3,8 @@ export interface IProject {
   description: string,
   link: string,
   imgUrl: string,
-  tags: ProjectTag[]
+  tags: ProjectTag[],
+  points: number
 }
 export enum ProjectTag {
   All,
@@ -20,6 +21,7 @@ export default [
     description: "A site to my students club. It powered by WordPress and dynamic Theme Fashion. I also provide technical support.",
     imgUrl: "assets/images/projects/sporadic.jpg",
     name: "SPORADIC",
+    points: 0,
   },
   {
     tags: [ProjectTag.Desktop],
@@ -27,6 +29,7 @@ export default [
     description: "Desktop version of Optimum Beauty's consolidated price programs for Velox LLC. The startup closed in 2016 but it gave me a good experience in communicating with retail clients",
     imgUrl: "assets/images/projects/optimum.jpg",
     name: "Optimum Beauty",
+    points: 0,
   },
   {
     tags: [ProjectTag.Mobile],
@@ -34,6 +37,7 @@ export default [
     description: "An application to pick the size of a motorcycle helmet using recognition.\nDevelopment of a mobile application. The project improved my API design skills and allowed me to learn Kotlin",
     imgUrl: "assets/images/projects/runlimit.jpg",
     name: "RUNLIMIT",
+    points: 0,
   },
   {
     tags: [ProjectTag.Website],
@@ -41,6 +45,7 @@ export default [
     description: "Education portal powered by Wordpress, migration from Drupal, writing plugins and supports. I improved my PHP, SQL and WordPress skills.",
     imgUrl: "assets/images/projects/swift.jpg",
     name: "SwiftBook",
+    points: 0,
   },
   {
     tags: [ProjectTag.Engineer],
@@ -48,6 +53,7 @@ export default [
     description: "Two Russian satellites activated from inside the International Space Station. It's my first true engineering project.",
     imgUrl: "assets/images/projects/tanyusha-yuzgu.jpg",
     name: "CubeSats Tanusha 1 & 2",
+    points: 0,
   },
   {
     tags: [ProjectTag.Engineer],
@@ -55,6 +61,7 @@ export default [
     description: "International satellite project. I improved my engineering and programming skills in particular compression algorithms, and noise-correcting coding. Gave me the opportunity to move to Ecuador in the future.",
     imgUrl: "assets/images/projects/eq.jpg",
     name: "Ecuador UTE-SWSU RS3S",
+    points: 0,
   },
   {
     tags: [ProjectTag.Engineer],
@@ -62,6 +69,7 @@ export default [
     description: " ",
     imgUrl: "assets/images/projects/tpu.JPG",
     name: "Tomsk-TPU-120",
+    points: 0,
   },
   {
     tags: [ProjectTag.Mobile],
@@ -69,6 +77,7 @@ export default [
     description: "Android app for live cards with NFC",
     imgUrl: "assets/images/projects/a3.jpg",
     name: "iMatreshka",
+    points: 0,
   },
   {
     tags: [ProjectTag.Social],
@@ -76,6 +85,7 @@ export default [
     description: "Organizing and conducting a 3 competition for 100 programmers in 2017,2018 and 2019.",
     imgUrl: "assets/images/projects/work_8.webp",
     name: "Hack-Kursk \"IT Vocation\"",
+    points: 0,
   },
   {
     tags: [ProjectTag.Website],
@@ -83,6 +93,7 @@ export default [
     description: " ",
     imgUrl: "assets/images/projects/programmers.jpg",
     name: " PixelBook.ru",
+    points: 0,
   },
   {
     tags: [ProjectTag.Website],
@@ -90,6 +101,7 @@ export default [
     description: "My first website experience on php, bootstrap, jQuery and ajax.",
     imgUrl: "assets/images/projects/dobriedela.webp",
     name: "Dobrie dela",
+    points: 0,
   },
   {
     tags: [ProjectTag.Mobile],
@@ -97,6 +109,7 @@ export default [
     description: "Contactless car refueling system. I administered a microservice system. Became DevOps. A lot of nervous work. hahaha",
     imgUrl: "assets/images/projects/fuelup.png",
     name: "FuelUP",
+    points: 0,
   },
   {
     tags: [ProjectTag.Mobile],
@@ -104,6 +117,7 @@ export default [
     description: "Infrastructure development and administration",
     imgUrl: "assets/images/projects/fuelup.png",
     name: "FuelUP",
+    points: 0,
   },
   {
     tags: [ProjectTag.Social],
@@ -111,6 +125,7 @@ export default [
     description: "Development of a training program for a course \"Basics of circuitry\" for young people interested in electronics. Improved my teaching and communication skills.",
     imgUrl: "assets/images/projects/fuelup.png",
     name: "Course \"Basics of circuitry\"",
+    points: 0,
   },
   {
     tags: [ProjectTag.Social],
@@ -118,6 +133,7 @@ export default [
     description: "Development of a training program for a course \"Basics of circuitry\" for young people interested in electronics. Improved my teaching and communication skills.",
     imgUrl: "assets/images/projects/fuelup.png",
     name: "UCE Drones",
+    points: 0,
   },
   {
     tags: [ProjectTag.Social],
@@ -125,6 +141,7 @@ export default [
     description: "Development of a training program for a course \"Basics of circuitry\" for young people interested in electronics. Improved my teaching and communication skills.",
     imgUrl: "assets/images/projects/fuelup.png",
     name: "UTE Respirator artisicial",
+    points: 0,
   },
   {
     tags: [ProjectTag.Social],
@@ -139,20 +156,23 @@ export default [
     description: "Development of a training program for a course \"Basics of circuitry\" for young people interested in electronics. Improved my teaching and communication skills.",
     imgUrl: "assets/images/projects/fuelup.png",
     name: "facebook ads rs pr",
+    points: 0,
   },
   {
-    tags: [ProjectTag.Social],
-    link: ' ',
-    description: "Development of a training program for a course \"Basics of circuitry\" for young people interested in electronics. Improved my teaching and communication skills.",
-    imgUrl: "assets/images/projects/fuelup.png",
+    tags: [ProjectTag.Website],
+    link: 'https://getpayever.com/',
+    description: "Online website builder. Significantly increased my level of Angular mastered rxjs. The company had well-established testing and deployment processes.",
+    imgUrl: "assets/images/projects/payever",
     name: "PayEver",
+    points: 2,
   },
   {
-    tags: [ProjectTag.Social],
-    link: ' ',
-    description: "Development of a training program for a course \"Basics of circuitry\" for young people interested in electronics. Improved my teaching and communication skills.",
-    imgUrl: "assets/images/projects/fuelup.png",
+    tags: [ProjectTag.Website],
+    link: 'https://preciouspayload.com/',
+    description: "The platform for booking cells on rockets for a satellite and the exchange of documentation at different stages of the project. I improved my Angular, NgRX, learned Spring, and gained experience in organizing good dev processes.",
+    imgUrl: "assets/images/projects/precious_payload",
     name: "Precious Payload",
+    points: 1,
   },
   {
     tags: [ProjectTag.Social],
@@ -160,15 +180,16 @@ export default [
     description: "Development of a training program for a course \"Basics of circuitry\" for young people interested in electronics. Improved my teaching and communication skills.",
     imgUrl: "assets/images/projects/fuelup.png",
     name: "WBF System core",
+    points: 0,
   },
   {
-    tags: [ProjectTag.Social],
-    link: ' ',
-    description: "Development of a training program for a course \"Basics of circuitry\" for young people interested in electronics. Improved my teaching and communication skills.",
-    imgUrl: "assets/images/projects/fuelup.png",
+    tags: [ProjectTag.Mobile],
+    link: '',
+    description: "",
+    imgUrl: "assets/images/projects/",
     name: "WBF Driver 360",
+    points: 0,
   }
-
 
 ] as IProject[];
 

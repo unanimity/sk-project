@@ -27,7 +27,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   get projects() {
-    return projects.filter((p) => p.tags.includes(this.tag) || this.tag === 0)
+    return projects.sort((a, b) => a.points - b.points).filter((p) => p.points > 0 && (p.tags.includes(this.tag) || this.tag === 0))
   }
 
   onFilter(event: number) {
