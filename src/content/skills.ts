@@ -646,7 +646,7 @@ export default [
         hit: ''
       },
       {
-        name: 'Multiprocessor complexes and systems',
+        name: 'Multiprocessor complexes',
         lvl: ELvl.Middle,
         hit: ''
       },
