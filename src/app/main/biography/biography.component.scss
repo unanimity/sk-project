@@ -22,9 +22,11 @@ span {
 }
 ::ng-deep{
  span{
+   line-height: 1.5;
    a{
      display: inline;
      font-size: 24px;
+     line-height: 1.5;
    }
  }
 }
