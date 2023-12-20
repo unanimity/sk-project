@@ -16,7 +16,7 @@
 </div>
 
 <div>
-  <h3>Frameworks/Tools</h3>
+  <h3>Skill</h3>
   <section *ngFor="let framework of  positions[currentPosition].frameworks; let i=index  ">
     <p [ngClass]="'animate-'+i*2+'s'">{{framework.name}}<span  *ngIf="framework.lvl==ELvl.Advanced" class="star-five"></span></p>
   </section>

@@ -22,12 +22,12 @@ export default [
     languages: [
       {
         name: 'JavaScript',
-        lvl: ELvl.Advanced,
+        lvl: ELvl.Middle,
         hit: ''
       },
       {
         name: 'TypeScript',
-        lvl: ELvl.Middle,
+        lvl: ELvl.Advanced,
         hit: ''
       },
       {
@@ -50,11 +50,6 @@ export default [
       },
       {
         name: 'React',
-        lvl: ELvl.Basic,
-        hit: ''
-      },
-      {
-        name: 'Vue JS',
         lvl: ELvl.Basic,
         hit: ''
       },
@@ -127,7 +122,7 @@ export default [
       },
       {
         name: 'REST API',
-        lvl: ELvl.Middle,
+        lvl: ELvl.Advanced,
         hit: ''
       },
       {
@@ -152,12 +147,12 @@ export default [
     languages: [
       {
         name: 'JavaScript',
-        lvl: ELvl.Advanced,
+        lvl: ELvl.Middle,
         hit: ''
       },
       {
         name: 'TypeScript',
-        lvl: ELvl.Middle,
+        lvl: ELvl.Advanced,
         hit: ''
       },
       {
@@ -190,11 +185,6 @@ export default [
       },
       {
         name: 'Spring',
-        lvl: ELvl.Middle,
-        hit: ''
-      },
-      {
-        name: 'Yii2',
         lvl: ELvl.Middle,
         hit: ''
       },
@@ -278,7 +268,7 @@ export default [
 
       {
         name: 'PostgreSQL cluster',
-        lvl: ELvl.Middle,
+        lvl: ELvl.Advanced,
         hit: ''
       },
       {
@@ -288,7 +278,12 @@ export default [
       },
       {
         name: 'GitLab CI/CD',
-        lvl: ELvl.Middle,
+        lvl: ELvl.Advanced,
+        hit: ''
+      },
+      {
+        name: 'Kubernetes',
+        lvl: ELvl.Advanced,
         hit: ''
       },
       {
@@ -365,6 +360,11 @@ export default [
         hit: ''
       },
       {
+        name: 'Kanban',
+        lvl: ELvl.Advanced,
+        hit: ''
+      },
+      {
         name: 'Jira',
         lvl: ELvl.Middle,
         hit: ''
@@ -393,6 +393,11 @@ export default [
         name: 'Performance Review',
         lvl: ELvl.Middle,
         hit: ''
+      },
+      {
+        name: 'Tech interviews',
+        lvl: ELvl.Middle,
+        hit: ''
       }
     ]
   },
@@ -416,6 +421,11 @@ export default [
       },
       {
         name: 'Security',
+        lvl: ELvl.Middle,
+        hit: ''
+      },
+      {
+        name: 'SOLID',
         lvl: ELvl.Middle,
         hit: ''
       },
@@ -446,6 +456,11 @@ export default [
       },
       {
         name: 'CQRS',
+        lvl: ELvl.Middle,
+        hit: ''
+      },
+      {
+        name: 'Patterns',
         lvl: ELvl.Middle,
         hit: ''
       },

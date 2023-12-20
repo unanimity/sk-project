@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import positions, {ELvl, IPosition} from '../../../content/skills'
+import positions, {ELvl} from '../../../content/skills'
 
 @Component({
   selector: 'app-skills',
