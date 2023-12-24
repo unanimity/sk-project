@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {MatLegacyDialog as MatDialog} from "@angular/material/legacy-dialog";
 import {DonateDialogComponent} from "./donate-dialog/donate-dialog.component";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-donate',
@@ -14,9 +14,13 @@ export class DonateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+  openDialog(): void {
+    console.log('dd')
     this.dialog.open(DonateDialogComponent, {
-      width: '250px',
+      maxWidth: '600px',
+      minWidth: '250px',
+      maxHeight: '80%',
+      minHeight: '445px',
     });
   }
 }

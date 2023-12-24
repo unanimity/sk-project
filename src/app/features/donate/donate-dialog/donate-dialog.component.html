@@ -1,8 +1,38 @@
-<h1 mat-dialog-title>Delete file</h1>
+<h1 mat-dialog-title>Donate</h1>
 <div mat-dialog-content>
-  Would you like to delete cat.jpeg?
-</div>
-<div mat-dialog-actions>
-  <button mat-button mat-dialog-close>No</button>
-  <button mat-button mat-dialog-close >Ok</button>
+  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+    <mat-tab label="Ethereum (ETH)">
+      <div class="content">
+        <div class="donate">
+          <img style="width: 100%; max-width: 300px;" src="assets/images/sk-personal-public.png" alt="0xf66ce2eb561d3b3f037b818bf90c48b92d7672bf">
+          <p style="font-size: 12px">Address: <samp>0xf66ce2eb561d3b3f037b818bf90c48b92d7672bf</samp></p>
+          <p style="font-size: 12px">Network: <samp>Ethereum (ERC20)</samp></p>
+
+        </div>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Binance Chain (BNB)">
+      <div class="content">
+        <div class="donate">
+          <img style="width: 100%; max-width: 300px;" src="assets/images/sk-personal-public.png" alt="0xf66ce2eb561d3b3f037b818bf90c48b92d7672bf">
+          <p style="font-size: 12px">Address: <samp>0xf66ce2eb561d3b3f037b818bf90c48b92d7672bf</samp></p>
+          <p style="font-size: 12px">Network: <samp>BNB Smart Chain (BEP20)</samp></p>
+        </div>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Binance/USDT">
+      <div class="content">
+        <div class="donate">
+          <img style="width: 100%; max-width: 300px;" src="assets/images/binance-pay-qr.png" alt="0xf66ce2eb561d3b3f037b818bf90c48b92d7672bf">
+          <p style="font-size: 12px">Pay ID: <samp>491942778</samp></p>
+        </div>
+      </div>
+    </mat-tab>
+<!--    <mat-tab label="Other">
+
+    </mat-tab>-->
+    <div id="paypal-button-container"></div>
+  </mat-tab-group>
 </div>
