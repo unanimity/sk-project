@@ -1,26 +1,28 @@
 <h1>Competences</h1>
 <div class="content">
-<div>
-  <h3>Positions</h3>
-  <section *ngFor="let position of positions; let i=index ">
-    <span class="cursor" [ngClass]=" (i==currentPosition?'current-position':'')" ></span>
-    <a (click)="currentPosition=i"  >{{position.name }}</a>
-  </section>
-</div>
+  <div>
+    <h3>Positions</h3>
+    <section *ngFor="let position of positions; let i=index ">
+      <span class="cursor" [ngClass]=" (i==currentPosition?'current-position':'')"></span>
+      <a (click)="currentPosition=i">{{ position.name }}</a>
+    </section>
+  </div>
 
-<div>
-  <h3>Languages</h3>
-  <section *ngFor="let language of positions[currentPosition].languages; let i=index ">
-    <p [ngClass]="'animate-'+i+'s'">{{language.name}}<span *ngIf="language.lvl==ELvl.Advanced" class="star-five"></span></p>
-  </section>
-</div>
+  <div>
+    <h3>Languages</h3>
+    <section *ngFor="let language of positions[currentPosition].languages; let i=index ">
+      <p [ngClass]="'animate-'+i+'s'">{{ language.name }}<span *ngIf="language.lvl==ELvl.Advanced"
+                                                               class="star-five"></span></p>
+    </section>
+  </div>
 
-<div>
-  <h3>Skill</h3>
-  <section *ngFor="let framework of  positions[currentPosition].frameworks; let i=index  ">
-    <p [ngClass]="'animate-'+i*2+'s'">{{framework.name}}<span  *ngIf="framework.lvl==ELvl.Advanced" class="star-five"></span></p>
-  </section>
-</div>
+  <div>
+    <h3>Skill</h3>
+    <section *ngFor="let framework of  positions[currentPosition].frameworks; let i=index  ">
+      <p [ngClass]="'animate-'+i*2+'s'">{{ framework.name }}<span *ngIf="framework.lvl==ELvl.Advanced"
+                                                                  class="star-five"></span></p>
+    </section>
+  </div>
   <div></div>
 
 </div>

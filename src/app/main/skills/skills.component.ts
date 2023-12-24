@@ -8,16 +8,17 @@ import positions, {ELvl} from '../../../content/skills'
 })
 export class SkillsComponent implements OnInit {
 
-  public  positions=positions;
-  public  currentPosition=0;
-  public ELvl  = ELvl;
+  public positions = positions;
+  public currentPosition = 0;
+  public ELvl = ELvl;
+
   constructor() {
   }
 
   ngOnInit(): void {
   }
 
-    getRandomId() {
-    return Math.floor((Math.random()*3)+1);
+  getRandomId() {
+    return Math.floor((Math.random() * 3) + 1);
   }
 }

@@ -1,4 +1,7 @@
-<a  href='#about_me'><app-logo ></app-logo></a>
+<a href='#about_me'>
+  <app-logo></app-logo>
+</a>
 <ng-container *ngFor="let item of items">
-  <a href='{{item.id}}' >{{item.title}}</a>
+  <a href='{{item.id}}'>{{ item.title }}</a>
 </ng-container>
+<app-donate  class="bottom-block"></app-donate>
