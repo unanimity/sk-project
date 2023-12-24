@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {DonateComponent} from "./donate.component";
 import {DonateDialogComponent} from "./donate-dialog/donate-dialog.component";
-import {MatButtonModule} from "@angular/material/button";
+import {MatLegacyButtonModule as MatButtonModule} from "@angular/material/legacy-button";
 import {
-  MatDialogActions,
-  MatDialogClose,
-  MatDialogContent,
-  MatDialogModule,
-  MatDialogTitle
-} from "@angular/material/dialog";
+  MatLegacyDialogActions as MatDialogActions,
+  MatLegacyDialogClose as MatDialogClose,
+  MatLegacyDialogContent as MatDialogContent,
+  MatLegacyDialogModule as MatDialogModule,
+  MatLegacyDialogTitle as MatDialogTitle
+} from "@angular/material/legacy-dialog";
 
 
 
