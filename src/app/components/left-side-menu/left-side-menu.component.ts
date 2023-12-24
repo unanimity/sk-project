@@ -6,12 +6,12 @@ import {Component} from '@angular/core';
   templateUrl: './left-side-menu.component.html',
   styleUrls: ['./left-side-menu.component.scss']
 })
-export class LeftSideMenuComponent  {
+export class LeftSideMenuComponent {
 
   public items = [
-    {title: 'Skills', id:'#skills'},
-    {title: 'Projects', id:'#projects'},
-    {title: 'Biography', id:'#biography'},
-    {title: 'Contacts', id:'#contacts'},
+    {title: 'Skills', id: '#skills'},
+    {title: 'Projects', id: '#projects'},
+    {title: 'Biography', id: '#biography'},
+    {title: 'Contacts', id: '#contacts'},
   ];
 }

@@ -1,7 +1,4 @@
-import {
-
-  Component,
-} from '@angular/core';
+import {Component,} from '@angular/core';
 import bio from '../../../content/biograthy';
 
 @Component({
@@ -9,15 +6,15 @@ import bio from '../../../content/biograthy';
   templateUrl: './biography.component.html',
   styleUrls: ['./biography.component.scss'],
 })
-export class BiographyComponent   {
+export class BiographyComponent {
 
   public page = 0;
 
-  public  isMore: boolean= false;
+  public isMore: boolean = false;
 
 
-  get bio (){
-    return bio.slice(0,this.isMore?bio.length:bio.indexOf('►')).replace('►','')
+  get bio() {
+    return bio.slice(0, this.isMore ? bio.length : bio.indexOf('►')).replace('►', '')
   }
 
 }

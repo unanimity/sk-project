@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 
 @Component({
@@ -9,11 +9,11 @@ import { Component } from '@angular/core';
 export class TopSideMenuComponent {
 
   public items = [
-    {title: 'About', id:'#about_me'},
-    {title: 'Skills', id:'#skills'},
-    {title: 'Projects', id:'#projects'},
-    {title: 'Biography', id:'#biography'},
-    {title: 'Contacts', id:'#contacts'},
+    {title: 'About', id: '#about_me'},
+    {title: 'Skills', id: '#skills'},
+    {title: 'Projects', id: '#projects'},
+    {title: 'Biography', id: '#biography'},
+    {title: 'Contacts', id: '#contacts'},
   ];
 
 }

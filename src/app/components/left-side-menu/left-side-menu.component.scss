@@ -1,4 +1,5 @@
 @import "../../../theme/theme";
+
 :host {
   min-width: 112px;
   max-width: 130px;
@@ -14,6 +15,11 @@
 }
 
 
-a{
+a {
   line-height: 2;
+}
+
+.bottom-block {
+  margin-top: auto;
+  margin-bottom: 30px;
 }

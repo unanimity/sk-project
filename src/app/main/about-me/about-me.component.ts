@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
@@ -6,9 +6,10 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
-  public  chaos =false;
+  public chaos = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

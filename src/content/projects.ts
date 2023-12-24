@@ -6,6 +6,7 @@ export interface IProject {
   tags: ProjectTag[],
   points: number
 }
+
 export enum ProjectTag {
   All,
   Website,
@@ -14,6 +15,7 @@ export enum ProjectTag {
   Engineer,
   Social
 }
+
 export default [
   {
     tags: [ProjectTag.Website, ProjectTag.Social],
