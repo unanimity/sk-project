@@ -1,7 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {TitleMessageComponent} from "./title-message.component";
-
 
 
 @NgModule({
@@ -9,6 +8,7 @@ import {TitleMessageComponent} from "./title-message.component";
   imports: [
     CommonModule
   ],
-  exports:[TitleMessageComponent]
+  exports: [TitleMessageComponent]
 })
-export class TitleMessageModule { }
+export class TitleMessageModule {
+}

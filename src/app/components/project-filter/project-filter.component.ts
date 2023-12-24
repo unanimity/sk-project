@@ -7,7 +7,7 @@ import {
   Input,
   Output
 } from '@angular/core';
-import { ProjectTag } from 'src/content/projects';
+import {ProjectTag} from 'src/content/projects';
 
 @Component({
   selector: 'app-project-filter',
@@ -23,6 +23,7 @@ export class ProjectFilterComponent implements AfterViewInit {
 
   constructor(private cd: ChangeDetectorRef) {
   }
+
   chose(index: number) {
     this.tag.emit(index);
     this.cd.detectChanges();

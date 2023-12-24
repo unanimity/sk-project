@@ -9,11 +9,12 @@ import {IProject, ProjectTag} from "../../../content/projects";
 export class ProjectCardComponent implements OnInit {
 
   @Input()
-  public  project!: IProject;
+  public project!: IProject;
 
   public ProjectTag = ProjectTag
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
 

@@ -1,6 +1,4 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {ViewportScroller} from "@angular/common";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-landing',
@@ -10,7 +8,7 @@ import {Router} from "@angular/router";
 })
 export class LandingComponent implements OnInit {
 
-  constructor( ) {
+  constructor() {
   }
 
   ngOnInit() {

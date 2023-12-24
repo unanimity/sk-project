@@ -41,17 +41,19 @@ picture {
   justify-content: start;
   align-items: center;
 }
+
 span {
   border: solid #7d7d9b 1px;
   border-radius: 3px;
   padding: 3px;
-  color: #7d7d9b ;
+  color: #7d7d9b;
   margin-left: 8px;
 }
 
 span:first-child {
   margin-left: 0;
 }
+
 a {
-margin-left: auto;
+  margin-left: auto;
 }

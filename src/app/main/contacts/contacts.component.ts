@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {socialLinks, socialPages} from "../../../content/contacts";
 
 
@@ -8,10 +8,11 @@ import {socialLinks, socialPages} from "../../../content/contacts";
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
-  public  socialLinks = socialLinks;
-  public  socialPages = socialPages;
+  public socialLinks = socialLinks;
+  public socialPages = socialPages;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

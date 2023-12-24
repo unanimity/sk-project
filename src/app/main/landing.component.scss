@@ -14,40 +14,42 @@
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
- // max-width: $max-screen-size;
+  // max-width: $max-screen-size;
 }
 
 
-@media screen and  (max-width: $mobile-size) {
+@media screen and (max-width: $mobile-size) {
   .sections-wrapper > * {
     padding-left: 0;
   }
-  #left-side-menu{
+  #left-side-menu {
     display: none;
   }
-  #top-side-menu{
+  #top-side-menu {
     display: block;
   }
 }
-@media  screen and (min-width: $mobile-size) and (max-width: $max-screen-size){
+
+@media screen and (min-width: $mobile-size) and (max-width: $max-screen-size) {
   .sections-wrapper > * {
     padding-left: 45px;
   }
-  #left-side-menu{
-    display: block;
+  #left-side-menu {
+    display: flex;
   }
-  #top-side-menu{
+  #top-side-menu {
     display: none;
   }
 }
-@media  screen and (min-width: $max-screen-size) {
+
+@media screen and (min-width: $max-screen-size) {
   .sections-wrapper > * {
     padding-left: 80px;
   }
-  #left-side-menu{
-    display: block;
+  #left-side-menu {
+    display: flex;
   }
-  #top-side-menu{
+  #top-side-menu {
     display: none;
   }
 }
