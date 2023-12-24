@@ -86,10 +86,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sk-project:build:production"
+              "buildTarget": "sk-project:build:production"
             },
             "development": {
-              "browserTarget": "sk-project:build:development"
+              "buildTarget": "sk-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -97,7 +97,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sk-project:build"
+            "buildTarget": "sk-project:build"
           }
         }
       }
