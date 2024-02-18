@@ -1,0 +1,11 @@
+<a *ngIf="referral.link" [href]="referral.link" target="_blank">
+<picture>
+  <img [src]="referral!.imgUrl"
+       alt="Project Picture"
+       width="300"
+       height="125">
+</picture>
+<p>{{ referral!.name }}</p>
+<p class="description">{{ referral!.description }}</p></a>
+
+

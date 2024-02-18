@@ -13,5 +13,6 @@ export class LeftSideMenuComponent {
     {title: 'Projects', id: '#projects'},
     {title: 'Biography', id: '#biography'},
     {title: 'Contacts', id: '#contacts'},
+    {title: 'Referrals', id: '#referrals'},
   ];
 }

@@ -1,0 +1,14 @@
+<h1>Referrals</h1>
+<p>I trust</p>
+<div class="content">
+  <ng-container *ngFor="let referral of referrals; let i=index">
+    <app-referral-card
+      [referral]="referral"
+    >
+    </app-referral-card>
+  </ng-container>
+</div>
+
+
+
+

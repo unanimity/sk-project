@@ -9,6 +9,7 @@ import {SkillsComponent} from './skills/skills.component';
 import {ComponentsModule} from "../components/components.module";
 import {TitleMessageModule} from "../features/title-message/title-message.module";
 import {HtmlBombModule} from "../features/html-bomb/html-bomb.module";
+import {ReferralsComponent} from "./referrals/referrals.component";
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import {HtmlBombModule} from "../features/html-bomb/html-bomb.module";
     ProjectsComponent,
     BiographyComponent,
     SkillsComponent,
+    ReferralsComponent,
   ],
   imports: [
     CommonModule,

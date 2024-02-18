@@ -1,0 +1,31 @@
+@import "../../../theme/theme";
+
+.content {
+  margin-left: -12px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.content > * {
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: $mobile-size) {
+  .content {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: $mobile-size) and (max-width: $max-screen-size) {
+  .content {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: $max-screen-size) {
+  .content {
+    justify-content: start;
+  }
+}
