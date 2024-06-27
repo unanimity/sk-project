@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {socialLinks, socialPages} from "../../../content/contacts";
 import Referrals from "../../../content/referrals";
-import referrals from "../../../content/referrals";
 
 
 @Component({

@@ -4,9 +4,7 @@ export interface IReferral {
   link: string,
   imgUrl: string,
 }
-
-
-
+// https://www.figma.com/file/vdNzAJSm9dl6pTsx3FvcoD/Untitled?type=design&node-id=0-1&mode=design&t=eXmwIPrqPnEpvwQP-0
 export default [
   {
 
